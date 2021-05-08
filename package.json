@@ -1,0 +1,22 @@
+{
+  "name": "batch_image_processor",
+  "version": "1.0.0",
+  "description": "module to process a images directory with different options (generate thumbnails, change extension, scale and many others)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NandoLT/Batch_Image_Processor.git"
+  },
+  "author": "Fernando López Trejo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NandoLT/Batch_Image_Processor/issues"
+  },
+  "homepage": "https://github.com/NandoLT/Batch_Image_Processor#readme",
+  "dependencies": {
+    "jimp": "^0.16.1"
+  }
+}
