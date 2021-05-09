@@ -1,10 +1,11 @@
 {
   "name": "batch_image_processor",
   "version": "1.0.0",
-  "description": "module to process a images directory with different options (generate thumbnails, change extension, scale and many others)",
+  "description": "module to process a images directory with different options (generate thumbnails, change extension, scale and many others in batchs)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,7 @@
   },
   "homepage": "https://github.com/NandoLT/Batch_Image_Processor#readme",
   "dependencies": {
-    "jimp": "^0.16.1"
+    "jimp": "^0.16.1",
+    "splitfilt": "^1.0.7"
   }
 }
