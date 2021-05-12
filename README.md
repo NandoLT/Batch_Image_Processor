@@ -10,7 +10,12 @@ npm i batch_image_processor
 ## Methods
 
 ### generateThumbnails
-Method with two parameters: A path ro read list of files and path to save the thumbnails generated.
+Method with four parameters: {
+    A path ro read list of files,
+    path to save the thumbnails generated,
+    width,
+    height
+}
 ```bash
 generateTumbnails(pathToRead[String], pathToSave[String])
 ```
@@ -23,7 +28,12 @@ const imageProcessor = require('batchImageProcessor')
 const pathToRead = path.join(__dirname + '/images/')
 const pathToSave = path.join(__dirname + '/images/thumbnails/')
 
-imageProcessor.generateThumbnails(pathToRead, pathToSave)
+generateThumbnails({
+    pathToRead, 
+    pathToSave, 
+    width : 300
+    height: 350
+})
 
 ```
 - With destructuring:
@@ -32,7 +42,11 @@ const {generateThumbnails} = require('batchImageProcessor')
 const pathToRead = path.join(__dirname + '/images/')
 const pathToSave = path.join(__dirname + '/images/thumbnails/')
 
-generateThumbnails(pathToRead, pathToSave)
+generateThumbnails({
+    pathToRead, 
+    pathToSave, 
+    width : 300
+})
 
 ```
 
