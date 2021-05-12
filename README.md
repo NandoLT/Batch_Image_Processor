@@ -5,7 +5,7 @@ Utility to process batches of images. In this first version we implement a singl
 ## How to install
 
 ```bash
-npm i batchImageProcessor
+npm i batch_image_processor
 ```
 ## Methods
 
@@ -19,11 +19,11 @@ Example of use:
 
 - Without destructuring:
 ```bash
-const pI = require('batchImageProcessor')
+const imageProcessor = require('batchImageProcessor')
 const pathToRead = path.join(__dirname + '/images/')
 const pathToSave = path.join(__dirname + '/images/thumbnails/')
 
-pi.generateThumbnails(pathToRead, pathToSave)
+imageProcessor.generateThumbnails(pathToRead, pathToSave)
 
 ```
 - With destructuring:
